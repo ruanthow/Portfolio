@@ -1,0 +1,8 @@
+:root{
+    --background-top: #080027;
+    --background-mid: background: linear-gradient(180deg, #080027 4.1%, #752FE7 57.55%, #6100FE 100%);
+    --background-mid2: background: linear-gradient(180deg, #6202FC 0%, #0D0021 100%);
+    --background-bottom: background: linear-gradient(180deg, #080027 50%, #260062 100%);
+    --background-end: background: linear-gradient(180deg, #250061 0%, #141313 17.71%);
+
+}

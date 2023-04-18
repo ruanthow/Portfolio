@@ -1,0 +1,99 @@
+@import "./variebles.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.nav{
+
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+
+  z-index: 9999;
+
+  background-color: transparent !important;
+  
+}
+
+.navLogo {
+  height: auto;
+  width: 200px;
+}
+.navLogo img {
+  width: 100%;
+  height: 100%;
+}
+
+.navOptions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navOption{
+  display: flex;
+  text-align: center;
+
+  margin: 0 2rem;
+  height: 1.1rem;
+}
+
+.spanArea{
+  width: 20px;
+}
+.spanLine{
+  display: flex;
+  justify-content: center;
+
+  width: 0%;
+  height: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+.navOption h6{
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  color: aliceblue;
+  transition: all ease 0.2s;
+}
+
+.navOption a{
+  text-decoration: none;
+}
+
+.navOption:hover .spanLine{
+    display: flex;
+    width: 100%;
+
+    border-bottom: 1px solid #fff;
+    transition: all ease-in-out 0.2s;
+}
+
+.devAbout{
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--background-top);
+}
+
+.devWave{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: absolute;
+
+   height: 100vh;
+}
+.devWave img{
+  width: 100%;
+  height: 100%;
+}
+
