@@ -91,7 +91,7 @@
   flex-direction: column;
 
   height: 100vh;
-  background-color: $background-sobremim;
+  background-color: $background-primary;
   position: relative;
 
   .sobreMimBG {
@@ -279,10 +279,12 @@
 .habilidades{
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  padding-bottom: 80px;
+  height: 100%;
   background: $background-habilidades;
 
   .habilidadesTitle{
+    margin: 250px 0 250px 0;
     h1{
       color: #fff;
       font-weight: 600;
@@ -314,6 +316,49 @@
       }to{
         transform: rotate(360deg);
       }
+    }
+  }
+  
+  .language{
+    background-color: $background-primary;
+
+    border-radius: 5px;
+    box-shadow: 12px 15px 8px rgba(0, 0, 0, 0.65);
+
+    width: 200px;
+    margin: 16px;
+
+    h5{
+      padding: 8px;
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    .boxLanguageIcon{
+        padding: 8px;
+        width: 68px;
+        height: 71px;
+      img{
+        height:100%;
+        width: 100%;
+      }
+    }
+  }
+  #secondeLine{
+    margin-left: 120px;
+  }
+}
+
+.projetos{
+  background: $background-projetos;
+
+  .boxProjetosImg{
+    width: 750px;
+    height: 750px;
+
+    img{
+      width: 100%;
+      height: 100%;
     }
   }
 }
