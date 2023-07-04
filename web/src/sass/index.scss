@@ -8,6 +8,9 @@
   font-family: Titillium Web;
 }
 
+body{
+  overflow-x: hidden;
+}
 
 .nav {
 
@@ -354,11 +357,120 @@
 
   .boxProjetosImg{
     width: 750px;
-    height: 750px;
 
     img{
       width: 100%;
       height: 100%;
     }
   }
+
+  .titleProjeto{
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .container-slides{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .buttons{
+      z-index: 9;
+      position: absolute;
+      top: 90%;
+
+      span{
+        display: inline-block;
+        border: none;
+        background-color: #ffffff63;
+
+        border-radius: 100%;
+        width: 15px;
+        height: 15px;
+
+        cursor: pointer;
+
+      }
+    }
+  }
+
+  .carroseul-container{
+    overflow: scroll;
+    scroll-behavior: smooth;
+    position: relative;
+    
+  }
+
+  .carroseul-container::-webkit-scrollbar{
+    display: none;
+  }
+
+  .carroseul{
+    
+    min-height: 500px;
+  }
+
+  .carroseul-infos{
+    background: linear-gradient(135deg, #C96AA8 0%, #5C0BED 100%);
+
+    .carroseul-title{
+      margin: 16px 0;
+      background-color:#141313;;
+      width: 100%;
+      height: 90px;
+
+
+      h1{
+        margin-bottom: 0;
+        font-size: 55pt;
+        font-weight: 700;
+        margin-left: 66px;
+        color: #fff;
+      }
+      
+    }
+    .carroseul-describe{
+      background: linear-gradient(90deg, #000 43.23%, #242424 100%);
+      box-shadow: 8px 15px 10px 0px rgba(0, 0, 0, 0.71);
+      width: 85%;
+      padding: 8px 8px 32px 8px;
+      margin-top: 50px;
+      min-height: 230px;
+
+      p{
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+
+    .carroseul-footer{
+      margin-top: 20%;
+      margin-left: 8px;
+      color: #fff;
+    }
+
+    
+  }
+
+  .carroseul-img{
+    background-color: #000;
+    .img-box{
+      filter: grayscale(100%);
+      transition: all ease 0.3s;
+      
+      padding: 16px;
+
+      cursor: pointer;
+
+      img{
+
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+    .img-box:hover{
+      filter: grayscale(0%);
+    }
+  }
+  
 }
