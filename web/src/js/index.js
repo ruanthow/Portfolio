@@ -2,9 +2,29 @@ var sobreMimBox = document.querySelector(".sobreMimBox");
 var isOpenBox = false;
 var carroseul = document.querySelector(".carroseul-container");
 let indexCarroseul = 0;
+var navbar = document.querySelector(".nav");
+
 var btnCarroseulItem = document.querySelectorAll(".btn-carroseul-item");
+
+// estado inicial do botão do carroseul.
 btnCarroseulItem[0].style.backgroundColor = "#ffffffd7";
 
+
+// esconder e mostrar o texto do inicio da pagina 
+function hideBoxMe(){
+    if(isOpenBox){
+        sobreMimBox.style.height = "0px";
+        isOpenBox = false;
+    }
+    else{
+        sobreMimBox.style.height = "250px";
+        isOpenBox = true;
+    }
+}
+
+
+
+// função de mudar a cor do botão do carroseul e mudar a imagem.
 btnCarroseulItem[0].addEventListener('click', (btn)=>{
     carroseul.scrollLeft = 0;
     btnCarroseulItem[0].style.backgroundColor = "#ffffffd7";
@@ -27,6 +47,7 @@ btnCarroseulItem[2].addEventListener('click', (btn)=>{
     indexCarroseul = 2
 })
 
+// função de mudar a cor do botão do carroseul e mudar a imagem automaticamente em 5seg.
 setInterval(()=>{
     
     if(indexCarroseul == 0){
@@ -53,15 +74,12 @@ setInterval(()=>{
    
 },5000)
 
-
-function hideBoxMe(){
-    if(isOpenBox){
-        sobreMimBox.style.height = "0px";
-        isOpenBox = false;
+addEventListener('scroll', ()=>{
+    if(window.scrollY >= 204){
+        navbar.style.backgroundColor = '#141313dc';
     }
     else{
-        sobreMimBox.style.height = "250px";
-        isOpenBox = true;
+        navbar.style.backgroundColor = 'transparent';
     }
-}
+})
 

@@ -21,8 +21,9 @@ body{
   margin: 0;
 
   z-index: 9999;
-
-  background-color: transparent !important;
+  
+  background-color: transparent;
+  transition: all ease-in-out 0.2s;
 
 }
 
@@ -376,7 +377,7 @@ body{
     .buttons{
       z-index: 9;
       position: absolute;
-      top: 90%;
+      top: 75%;
 
       span{
         display: inline-block;
@@ -397,11 +398,13 @@ body{
     overflow: scroll;
     scroll-behavior: smooth;
     position: relative;
+    margin-bottom: 64px;
     
   }
 
   .carroseul-container::-webkit-scrollbar{
     display: none;
+
   }
 
   .carroseul{
@@ -473,4 +476,24 @@ body{
     }
   }
   
+}
+
+.myFooter{
+  background-color: #141313;
+  border-top: 1px solid #fff;
+
+  .cols{
+      margin: 32px 32px 130px 32px;
+      width: 230px;
+      
+      h4{
+        font-weight: 700;
+        color: #C88AF9;
+      }
+
+      p{
+        color: #fff;
+      }
+
+  }
 }
