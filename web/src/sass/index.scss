@@ -8,7 +8,7 @@
   font-family: Titillium Web;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -21,7 +21,7 @@ body{
   margin: 0;
 
   z-index: 9999;
-  
+
   background-color: transparent;
   transition: all ease-in-out 0.2s;
 
@@ -35,6 +35,14 @@ body{
     width: 100%;
     height: 100%;
   }
+}
+
+.buttonCloseNavbar {
+  display: none;
+}
+
+.openMenu {
+  display: none;
 }
 
 .navOptions {
@@ -211,15 +219,18 @@ body{
   position: absolute;
   left: -2%;
   z-index: 0;
+
   img {
-  
+
     width: 100%;
     height: 100%;
   }
 }
-.formacaoCards{
+
+.formacaoCards {
   z-index: 1;
 }
+
 .formacaoCard {
   display: flex;
   justify-content: center;
@@ -250,12 +261,13 @@ body{
       margin-bottom: 0px;
     }
 
-    .logoCurso{
+    .logoCurso {
       min-height: 80px;
       min-width: 80px;
       width: 100px;
       height: 100px;
-      img{
+
+      img {
         width: 100%;
         height: 100%;
       }
@@ -278,51 +290,57 @@ body{
   }
 }
 
-.habilidades{
+.habilidades {
   display: flex;
   flex-direction: row;
   padding-bottom: 80px;
   height: 100%;
   background: $background-habilidades;
 
-  .habilidadesTitle{
+  .habilidadesTitle {
     margin: 250px 0 250px 0;
-    h1{
+
+    h1 {
       color: #fff;
       font-weight: 600;
     }
   }
 
-  .habilidadesBoxImg{
-   
-    .habilidadesImg1, .habilidadesImg2{
+  .habilidadesBoxImg {
+
+    .habilidadesImg1,
+    .habilidadesImg2 {
       position: absolute;
       width: 540px;
       height: 540px;
-      
-      img{
+
+      img {
         width: 100%;
         height: 100%;
       }
     }
-    .habilidadesImg1{
+
+    .habilidadesImg1 {
       z-index: 1;
     }
-    .habilidadesImg2{
+
+    .habilidadesImg2 {
       z-index: 0;
-      animation: rotateIcons infinite 60s ;
+      animation: rotateIcons infinite 60s;
     }
 
     @keyframes rotateIcons {
-      from{
+      from {
         transform: rotate(0deg);
-      }to{
+      }
+
+      to {
         transform: rotate(360deg);
       }
     }
   }
-  
-  .language{
+
+  .language {
     background-color: $background-primary;
 
     border-radius: 5px;
@@ -331,54 +349,57 @@ body{
     width: 200px;
     margin: 16px;
 
-    h5{
+    h5 {
       padding: 8px;
       color: #fff;
       margin-bottom: 0;
     }
 
-    .boxLanguageIcon{
-        padding: 8px;
-        width: 68px;
-        height: 71px;
-      img{
-        height:100%;
+    .boxLanguageIcon {
+      padding: 8px;
+      width: 68px;
+      height: 71px;
+
+      img {
+        height: 100%;
         width: 100%;
       }
     }
   }
-  #secondeLine{
+
+  #secondeLine {
     margin-left: 120px;
   }
 }
 
-.projetos{
+.projetos {
   background: $background-projetos;
 
-  .boxProjetosImg{
+  .boxProjetosImg {
     width: 750px;
 
-    img{
+    img {
       width: 100%;
       height: 100%;
     }
   }
 
-  .titleProjeto{
+  .titleProjeto {
     color: #fff;
     font-weight: 600;
   }
 
-  .container-slides{
+  .container-slides {
     position: relative;
     display: flex;
     justify-content: center;
-    .buttons{
+
+    .buttons {
       z-index: 9;
       position: absolute;
       top: 75%;
 
-      span{
+      span {
         display: inline-block;
         border: none;
         background-color: #ffffff63;
@@ -393,44 +414,46 @@ body{
     }
   }
 
-  .carroseul-container{
+  .carroseul-container {
     overflow: scroll;
     scroll-behavior: smooth;
     position: relative;
     margin-bottom: 64px;
-    
+
   }
 
-  .carroseul-container::-webkit-scrollbar{
+  .carroseul-container::-webkit-scrollbar {
     display: none;
 
   }
 
-  .carroseul{
-    
+  .carroseul {
+
     min-height: 500px;
   }
 
-  .carroseul-infos{
+  .carroseul-infos {
     background: linear-gradient(135deg, #C96AA8 0%, #5C0BED 100%);
 
-    .carroseul-title{
+    .carroseul-title {
       margin: 16px 0;
-      background-color:#141313;;
+      background-color: #141313;
+      ;
       width: 100%;
       height: 90px;
 
 
-      h1{
+      h1 {
         margin-bottom: 0;
         font-size: 55pt;
         font-weight: 700;
         margin-left: 66px;
         color: #fff;
       }
-      
+
     }
-    .carroseul-describe{
+
+    .carroseul-describe {
       background: linear-gradient(90deg, #000 43.23%, #242424 100%);
       box-shadow: 8px 15px 10px 0px rgba(0, 0, 0, 0.71);
       width: 85%;
@@ -438,115 +461,372 @@ body{
       margin-top: 50px;
       min-height: 230px;
 
-      p{
+      p {
         color: #fff;
         font-weight: 600;
       }
     }
 
-    .carroseul-footer{
+    .carroseul-footer {
       margin-top: 20%;
       margin-left: 8px;
       color: #fff;
     }
 
-    
+
   }
 
-  .carroseul-img{
+  .carroseul-img {
     background-color: #000;
-    .img-box{
+
+    .img-box {
       filter: grayscale(100%);
       transition: all ease 0.3s;
-      
+
       padding: 16px;
 
       cursor: pointer;
 
-      img{
+      img {
 
         width: 100%;
         height: 100%;
       }
 
     }
-    .img-box:hover{
+
+    .img-box:hover {
       filter: grayscale(0%);
     }
   }
-  
+
 }
 
-.myFooter{
+.myFooter {
   background-color: #141313;
   border-top: 1px solid #fff;
 
-  .cols{
-      margin: 32px 32px 130px 32px;
-      width: 230px;
-      
-      h4{
-        font-weight: 700;
-        color: #C88AF9;
-      }
+  .cols {
+    margin: 32px 32px 130px 32px;
+    width: 230px;
 
-      a{
-        text-decoration: none;
-      }
+    h4 {
+      font-weight: 700;
+      color: #C88AF9;
+    }
 
-      p{
-        margin: 0px 0px 0px 8px;
-        font-weight: 600;
-        color: #fff;
-      }
+    a {
+      text-decoration: none;
+    }
 
-      p:hover{
-        color: #C88AF9;
-      }
+    p {
+      margin: 0px 0px 0px 8px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    p:hover {
+      color: #C88AF9;
+    }
 
   }
 }
 
-@media ( max-width: 1280px) {
- 
-  .habilidadesImg1, .habilidadesImg2{
+@media (max-width: 1280px) {
+
+  .habilidadesImg1,
+  .habilidadesImg2 {
     width: 420px !important;
     height: 420px !important;
   }
 
-  .formacaoCard{
+  .formacaoCard {
     margin: 2px;
+  }
+
+  .myFooter .cols{
+    margin: 32px 12px 130px 12px;
+    width: 200px;
   }
 }
 
-@media ( max-width:960px ){
+@media (max-width:960px) {
+  .formacao{
+    height: 80%;
+   
+  }
 
-  .habilidadesImg1, .habilidadesImg2{
+  .habilidades{
+    padding-top: 50px;
+  }
+  .habilidadesImg1,
+  .habilidadesImg2 {
     width: 380px !important;
     height: 380px !important;
   }
 
-  #secondeLine{
+  #secondeLine {
     margin-left: 0px !important;
   }
 
-  .carroseul-title h1{
+  .carroseul-title h1 {
     font-size: 40pt !important;
   }
 
-  .cardTitle strong, p{
+  .cardTitle strong,
+  p {
     font-size: 9pt;
   }
 }
 
-@media ( max-width:768px ){
-  .habilidadesImg1, .habilidadesImg2{
+@media (max-width:884px) {
+
+  .openMenu{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .habilidadesImg1,
+  .habilidadesImg2 {
     width: 340px !important;
     height: 340px !important;
   }
 
-  .carroseul-title h1{
-   margin-left: 33px !important;
+  .carroseul-title h1 {
+    margin-left: 33px !important;
   }
 
+  .navLogo {
+    width: 120px;
+  }
+
+  .buttonCloseNavbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 16px 0 0;
+
+    margin-bottom: 32px;
+
+    .iconClose {
+      display: flex;
+      justify-content: center;
+
+      margin: 8px;
+      padding: 8px;
+
+      height: 60px;
+      width: 60px;
+
+      border-radius: 100%;
+
+      background-color: rgba(95, 95, 95, 0.192);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .iconClose:active {
+      transition: all ease 0.2s;
+      background-color: rgba(95, 95, 95, 0.685);
+    }
+  }
+
+  .buttonOpen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 40px;
+    width: 50px;
+    margin: 8px 0;
+    padding: 0px 8px;
+    background-color: #550FED;
+    border: none;
+    border-radius: 8px;
+
+    box-shadow: 4px 8px 8px #0e0227;
+
+    #bugger {
+      margin: 8px 0;
+    }
+  }
+
+  .buttonOpen:active {
+    background-color: #460ebe;
+  }
+
+  .buttonOpen span {
+    display: block;
+
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+
+
+  }
+
+
+
+  .navOptions {
+
+    padding-top: 18px;
+    background-color: #000;
+    z-index: 9999;
+    position: absolute;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 0%;
+    flex-direction: column;
+    transition: all ease-in-out 0.3s;
+    overflow-x: hidden;
+
+    .navOption {
+
+      .spanArea {
+        display: none;
+      }
+
+      height: auto;
+      padding: 32px 0;
+      width: 100%;
+      margin: 0;
+
+
+      border-bottom: 1px solid #fff;
+
+
+
+      display: flex;
+      justify-content: center;
+
+      h6 {
+        font-size: 18pt;
+      }
+    }
+
+    .navOption:active {
+      transition: all ease 0.2s;
+      background-color: rgba(95, 95, 95, 0.808);
+      ;
+    }
+  }
+
+  .myFooter .cols{
+    width: 180px;
+  }
+
+}
+
+@media (max-width:768px){
+  .myFooter .cols{
+    width: 150px;
+  }
+
+  h4{
+    font-size: 12pt;
+  }
+}
+
+@media (max-width:430px) {
+  
+  .sobreMim .sobreMimTitle{
+    h1{
+      font-size: 28pt;
+    }
+  }
+
+  .areaHatImg{
+    display: none !important;
+  }
+
+  .formacaoCards{
+    flex-direction: column !important;
+  }
+
+  .cardTitle{
+    strong{
+      font-size: 15pt;
+    }
+    p{
+      font-size: 13pt;
+    }
+  }
+
+  .cardInfos{
+    strong{
+      font-size: 18pt;
+    }
+    p{
+      font-size: 13pt;
+    }
+  }
+
+  .habilidadesBoxImg{
+    display: none !important;
+  }
+
+  .titleHabilidades{
+      font-size: 35pt;
+  }
+
+  .stacks{
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .habilidadesLanguagesContainer {
+    align-items: center;
+  }
+
+  .language{
+    margin: 0 8px 32px 0!important;
+  }
+
+  #stacks-3{
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .carroseul-infos{
+    display: none !important;
+  }
+
+  .projetos .carroseul-img{
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  .img-box{
+    height: 500px;
+    width: 300px;
+    padding: 0px !important;
+  }
+
+  .projetos .container-slides .buttons{
+    top: 92%;
+  }
+  .projetos .container-slides .buttons span{
+    height: 25px;
+    width: 25px;
+  }
+
+  .menuFooter{
+    flex-direction: column;
+  }
+
+  .myFooter .cols{
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width:325px) {
+  .sobreMim .sobreMimTitle h1 {
+    font-size: 26pt;
+  }
+  .myFooter .cols{
+    width: 135px;
+  }
 }

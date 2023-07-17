@@ -24,12 +24,24 @@
             <div class="navLogo col-2 col-xxl-2">
                 <img src="./src/assets/logoRSM.svg" alt="logo overbrain">
             </div>
-            <div class="navOptions col-10 col-xxl-9 col-md-8">
+            <div class="openMenu col-8 col-xxl-10 col-lg-10 col-md-10">   
+                <div class="buttonOpen">
+                    <span></span>
+                    <span id="bugger"></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navOptions col-10 col-xxl-9 col-lg-10 col-md-10">
+                <div class="buttonCloseNavbar">
+                    <div class="iconClose">
+                        <img src="./src/assets/icons/close.svg" alt="">
+                    </div>
+                </div>
                 <div class="navOption">
                     <div class="spanArea">
                         <span class="spanLine"></span>
                     </div>
-                    <a href="">
+                    <a href="#formacao">
                         <h6>Formação</h6>
                     </a>
                 </div>
@@ -37,7 +49,7 @@
                     <div class="spanArea">
                         <span class="spanLine"></span>
                     </div>
-                    <a href="">
+                    <a href="#habilidades">
                         <h6>Habilidades</h6>
                     </a>
                 </div>
@@ -45,7 +57,7 @@
                     <div class="spanArea">
                         <span class="spanLine"></span>
                     </div>
-                    <a href="">
+                    <a href="#projetos">
                         <h6>Projetos</h6>
                     </a>
                 </div>
@@ -53,7 +65,7 @@
                     <div class="spanArea">
                         <span class="spanLine"></span>
                     </div>
-                    <a href="">
+                    <a href="#contatos">
                         <h6>Contatos</h6>
                     </a>
                 </div>
@@ -62,7 +74,7 @@
         <!--NavBar-->
     </header>
     <main>
-        <section>
+        <section id="sobremim">
             <!--Session Sobre Mim-->
             <div class="row">
                 <div class="sobreMim col">
@@ -73,7 +85,7 @@
                         <p>Sobre o</p>
                         <h1>DESENVOLVEDOR</h1>
                     </div>
-                    <div class="sobreMimBox col-6 col-md-8 col-xl-4 col-xxl-4">
+                    <div class="sobreMimBox col-11 col-md-8 col-xl-6 col-xxl-6">
                         <p>Olá meu nome é Ruan Elvis Mendonça da Silva e tenho 25 anos. Iniciei meus estudos em 2019, na
                             instituição Senac RJ foi o meu primeiro contato com a programação teve duração de 1 ano e 2
                             meses.
@@ -82,30 +94,30 @@
                             "Programadores Cariocas 2022.1 ". Espero conseguir mais formações no futuro para agregar na
                             minha profissão.</p>
                     </div>
-                    <div class="sobreMimButton col-2">
+                    <div class="sobreMimButton col-4 col-xxl-2 col-lg-2 col-md-2">
                         <button onclick="hideBoxMe()">Saiba Mais</button>
                     </div>
                 </div>
             </div>
             <!--Session Sobre Mim-->
         </section>
-        <section>
+        <section id="formacao">
             <!--Session Formação-->
             <div class="row">
                 <div class="formacao col-12">
                     <div class="formacaoTitle col-12">
-                        <div class="d-flex col-6">
+                        <div class="areaHatImg d-flex col-0 col-6 col-xxl-6 col-lg-6 col-md-6">
                             <div class="formacaoImg">
                                 <img src="./src/assets/academy-img.svg" alt="icone de capuz de formação acadêmica">
                             </div>
                         </div>
-                        <h1 class="col-4 text-center">FORMAÇÃO</h1>
+                        <h1 class="col-12 col-4 col-xxl-4 col-lg-4 col-md-4 text-center">FORMAÇÃO</h1>
                     </div>
                     <div class="formacaoBG">
                         <img src="./src/assets/doble-wave.svg" alt="">
                     </div>
                     <div class="formacaoCards col-12 d-flex flex-row justify-content-center">
-                        <div class="formacaoCard col-4 col-xxl-3 col-xl-3">
+                        <div class="formacaoCard col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4">
                             <div class="borderCard">
                                 <div class="cardTitle d-flex flex-row">
                                     <div class="logoCurso">
@@ -121,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="formacaoCard col-4 col-xxl-3 col-xl-3">
+                        <div class="formacaoCard col-12 col-xxl-3 col-xl-3 col-xl-3 col-lg-3 col-md-4">
                             <div class="borderCard">
                                 <div class="cardTitle d-flex flex-row">
                                     <div class="logoCurso">
@@ -137,7 +149,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="formacaoCard col-4 col-xxl-3 col-xl-3">
+                        <div class="formacaoCard col-12 col-xxl-3 col-xl-3 col-xl-3 col-lg-3 col-md-4">
                             <div class="borderCard">
                                 <div class="cardTitle d-flex flex-row">
                                     <div class="logoCurso">
@@ -158,16 +170,15 @@
             </div>
             <!--Session Formação-->
         </section>
-        <section>
+        <section id="habilidades">
             <!--Session Habilidades-->
             <div class="row">
                 <div class="habilidades col-12 d-flex flex-column">
                     <div class="col-12 d-flex flex-row h-75">
-                        <div
-                            class="habilidadesTitle col-6 text-center d-flex justify-content-center align-items-center">
-                            <h1 class="h-75">HABILIDADES</h1>
+                        <div class="habilidadesTitle col-12 col-xxl-6 col-lg-6 col-md-6 text-center d-flex justify-content-center align-items-center">
+                            <h1 class="titleHabilidades h-75">HABILIDADES</h1>
                         </div>
-                        <div class="habilidadesBoxImg col-6">
+                        <div class="habilidadesBoxImg col-0 col-xxl-6 col-lg-6 col-md-6">
                             <div class="habilidadesImg1">
                                 <img src="./src/assets/notebook.svg" alt="">
                             </div>
@@ -177,7 +188,7 @@
                         </div>
                     </div>
                     <div class="habilidadesLanguagesContainer d-flex flex-column col-12">
-                        <div class="d-flex flex-row justify-content-center">
+                        <div class="stacks d-flex flex-row justify-content-center col-6 col-xxl-12 col-lg-12 col-md-12">
                             <div class="language d-flex align-items-center">
                                 <div class="boxLanguageIcon">
                                     <img src="./src/assets/logos/typescript-icon.svg" alt="">
@@ -203,7 +214,7 @@
                                 <h5>Git</h5>
                             </div>
                         </div>
-                        <div class="d-flex flex-row justify-content-center" id="secondeLine">
+                        <div class="stacks d-flex flex-row justify-content-center col-6 col-xxl-12 col-lg-12 col-md-12">
                             <div class="language d-flex align-items-center">
                                 <div class="boxLanguageIcon">
                                     <img src="./src/assets/logos/css.svg" alt="">
@@ -228,33 +239,33 @@
                                 </div>
                                 <h5>PHP</h5>
                             </div>
+                        </div>    
+                    </div>
+                    <div class="d-flex flex-row justify-content-center" id="stacks-3">
+                        <div class="language d-flex align-items-center">
+                            <div class="boxLanguageIcon">
+                                <img src="./src/assets/logos/logo-mysql.png" alt="">
+                            </div>
+                            <h5>MySQL</h5>
                         </div>
-                        <div class="d-flex flex-row justify-content-center">
-                            <div class="language d-flex align-items-center">
-                                <div class="boxLanguageIcon">
-                                    <img src="./src/assets/logos/logo-mysql.png" alt="">
-                                </div>
-                                <h5>MySQL</h5>
+                        <div class="language d-flex align-items-center">
+                            <div class="boxLanguageIcon">
+                                <img src="./src/assets/logos/bootstrap-logo.svg" alt="">
                             </div>
-                            <div class="language d-flex align-items-center">
-                                <div class="boxLanguageIcon">
-                                    <img src="./src/assets/logos/bootstrap-logo.svg" alt="">
-                                </div>
-                                <h5>Bootstrap</h5>
+                            <h5>Bootstrap</h5>
+                        </div>
+                        <div class="language d-flex align-items-center">
+                            <div class="boxLanguageIcon">
+                                <img src="./src/assets/logos/logo-sqllite.png" alt="">
                             </div>
-                            <div class="language d-flex align-items-center">
-                                <div class="boxLanguageIcon">
-                                    <img src="./src/assets/logos/logo-sqllite.png" alt="">
-                                </div>
-                                <h5>SQLLite</h5>
-                            </div>
+                            <h5>SQLLite</h5>
                         </div>
                     </div>
                 </div>
             </div>
             <!--Session Habilidades-->
         </section>
-        <section>
+        <section id="projetos">
             <!--Session Projetos-->
             <div class="row projetos">
                 <div class=" d-flex col-12">
@@ -277,7 +288,7 @@
                     </div>
                     <div class="carroseul-container d-flex">
                         <div class="carroseul col-12 d-flex justify-content-center">
-                            <div class="carroseul-infos col-5">
+                            <div class="carroseul-infos col-0 col-xxl-5 col-lg-5 col-md-5">
                                 <div class="carroseul-title">
                                     <h1>The Music</h1>
                                 </div>
@@ -292,16 +303,16 @@
                                 </div>
                                 <p class="carroseul-footer"> REACT NODE TYPESCRIPT SCSS SQLLITE FIREBASE </p>
                             </div>
-                            <div class="carroseul-img col-5 d-flex align-items-center">
+                            <div class="carroseul-img d-flex align-items-center col-12 col-xxl-5 col-lg-5 col-md-5">
                                 <a href="https://github.com/ruanthow/TheMusic" target="_blank">
                                     <div class="img-box">
-                                        <img src="./src/assets/theMusic.png" alt="">
+                                        <img class="imgCarroseul" src="./src/assets/theMusic.png" alt="">
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="carroseul col-12 d-flex justify-content-center">
-                            <div class="carroseul-infos col-5">
+                            <div class="carroseul-infos col-0 col-xxl-5 col-lg-5 col-md-5">
                                 <div class="carroseul-title">
                                     <h1>LocaDrive</h1>
                                 </div>
@@ -321,13 +332,13 @@
                             <div class="carroseul-img col-5 d-flex align-items-center">
                                 <a href="https://github.com/ruanthow/Projeto-Locadrive" target="_blank">
                                     <div class="img-box">
-                                        <img src="./src/assets/locadrive.png" alt="">
+                                        <img class="imgCarroseul" src="./src/assets/locadrive.png" alt="">
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="carroseul col-12 d-flex justify-content-center">
-                            <div class="carroseul-infos col-5">
+                            <div class="carroseul-infos col-0 col-xxl-5 col-lg-5 col-md-5">
                                 <div class="carroseul-title">
                                     <h1>SpokeBuds</h1>
                                 </div>
@@ -345,7 +356,7 @@
                             <div class="carroseul-img col-5 d-flex align-items-center">
                                 <a href="https://github.com/ruanthow/Projeto-FrontEnders" target="_blank">
                                     <div class="img-box">
-                                        <img src="./src/assets/spokeBuds.png" alt="">
+                                        <img class="imgCarroseul" src="./src/assets/spokeBuds.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -356,66 +367,71 @@
             <!--Session Projetos-->
         </section>
     </main>
-    <footer class="row myFooter">
+    <footer class="row myFooter" id="contatos">
         <div class="d-flex flex-row justify-content-center">
-            <div class="cols">
-                <h4>Mapa do site</h4>
-                <a href="">
-                    <p class="my-3">Sobre mim</p>
-                </a>
-                <a href="">
-                    <p>Formação</p>
-                </a>
-                <a href="">
-                    <p class="my-3">Habilidades</p>
-                </a>
-                <a href="">
-                    <p class="my-3">Projetos</p>
-                </a>  
-            </div>
-            <div class="cols">
-                <h4>Contatos</h4>
-                <div class="d-flex align-items-center">
-                    <img src="./src/assets/icons/wpp.svg" alt="">
-                    <a href="https://wa.me/5521983828052" target="_blank">
-                        <p>+55 21 983828052</p>
+            <div class="menuFooter d-flex">
+                <div class="cols">
+                    <h4>Mapa do site</h4>
+                    <a href="#sobremim">
+                        <p class="my-3">Sobre mim</p>
+                    </a>
+                    <a href="#formacao">
+                        <p>Formação</p>
+                    </a>
+                    <a href="#habilidades">
+                        <p class="my-3">Habilidades</p>
+                    </a>
+                    <a href="#projetos">
+                        <p class="my-3">Projetos</p>
                     </a>
                 </div>
-                <div class="d-flex align-items-center my-3">
-                    <img src="./src/assets/icons/gmail.svg" alt="">
-                    <p>ruan.dev7@gmail.com</p>
+                <div class="cols">
+                    <h4>Contatos</h4>
+                    <div class="d-flex align-items-center">
+                        <img src="./src/assets/icons/wpp.svg" alt="">
+                        <a href="https://wa.me/5521983828052" target="_blank">
+                            <p>+55 21 983828052</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center my-3">
+                        <img src="./src/assets/icons/gmail.svg" alt="">
+                        <p>ruan.dev7@gmail.com</p>
+                    </div>
+                    <div class="d-flex align-items-center my-3">
+                        <img src="./src/assets/icons/github.svg" alt="">
+                        <a href="https://github.com/ruanthow" target="_blank">
+                            <p>github.com/ruanthow</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center my-3">
+                        <img src="./src/assets/icons/linkedin.svg" alt="">
+                        <a href="https://www.linkedin.com/in/ruanmendon%C3%A7a/" target="_blank">
+                            <p>/in/ruanmendonça/</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="d-flex align-items-center my-3">
-                    <img src="./src/assets/icons/github.svg" alt="">
-                    <a href="https://github.com/ruanthow"  target="_blank">
-                        <p>github.com/ruanthow</p>
+            </div>
+            <div class="menuFooter d-flex">
+                <div class="cols">
+                    <h4>Projetos Github</h4>
+                    <a href="https://github.com/ruanthow/Projeto-Locadrive" target="_blank">
+                        <p class="my-3">Locadrive</p>
+                    </a>
+                    <a href="https://github.com/ruanthow/TheMusic" target="_blank">
+                        <p class="my-3">The Music</p>
+                    </a>
+                    <a href="https://github.com/ruanthow/Projeto-FrontEnders" target="_blank">
+                        <p class="my-3">SpokeBuds</p>
+                    </a>
+                    <a href="https://github.com/ruanthow/Projeto-Pub-Resilia-M3" target="_blank">
+                        <p class="my-3">PubBlinders</p>
                     </a>
                 </div>
-                <div class="d-flex align-items-center my-3">
-                    <img src="./src/assets/icons/linkedin.svg" alt="">
-                    <a href="https://www.linkedin.com/in/ruanmendon%C3%A7a/"  target="_blank">
-                        <p>linkedin.com/in/ruanmendonça/</p>
-                    </a> 
-                </div> 
-            </div>
-            <div class="cols">
-                <h4>Projetos Recentes</h4>
-                <a href="">
-                    <p class="my-3">Locadrive</p>
-                </a>
-                <a href="">
-                    <p class="my-3">The Music</p>
-                </a>
-                <a href="">
-                    <p class="my-3">SpokeBuds</p>
-                </a>
-                <a href="">
-                    <p class="my-3">PubBlinders</p>
-                </a>
-            </div>
-            <div class="cols">
-                <h4>Tim Notke</h4>
-                <p style="width: 90%; color: #C88AF9;">“ Trabalho duro vence o talento, quando o talento não trabalha duro ”</p>
+                <div class="cols">
+                    <h4>Tim Notke</h4>
+                    <p style="width: 90%; color: #C88AF9;">“ Trabalho duro vence o talento, quando o talento não trabalha
+                        duro ”</p>
+                </div>
             </div>
         </div>
         <div class="d-flex justify-content-center">
