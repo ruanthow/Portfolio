@@ -84,31 +84,31 @@ btnCarroseulItem[2].addEventListener('click', (btn)=>{
 })
 
 // função de mudar a cor do botão do carroseul e mudar a imagem automaticamente em 5seg.
-// setInterval(()=>{
+setInterval(()=>{
     
-//     if(indexCarroseul == 0){
-//         carroseul.scrollLeft = 0;
-//         btnCarroseulItem[0].style.backgroundColor = "#ffffffd7";
-//         btnCarroseulItem[1].style.backgroundColor = "#ffffff63";
-//         btnCarroseulItem[2].style.backgroundColor = "#ffffff63";
-//         indexCarroseul++;
-//     }
-//     else if(indexCarroseul == 1){
-//         carroseul.scrollLeft = carroseul.offsetWidth;
-//         btnCarroseulItem[0].style.backgroundColor = "#ffffff63";
-//         btnCarroseulItem[1].style.backgroundColor = "#ffffffd7";
-//         btnCarroseulItem[2].style.backgroundColor = "#ffffff63";
-//         indexCarroseul++
-//     }
-//     else{
-//         carroseul.scrollLeft = carroseul.offsetWidth * 2
-//         btnCarroseulItem[0].style.backgroundColor = "#ffffff63";
-//         btnCarroseulItem[1].style.backgroundColor = "#ffffff63";
-//         btnCarroseulItem[2].style.backgroundColor = "#ffffffd7";
-//         indexCarroseul = 0;
-//     }
+    if(indexCarroseul == 0){
+        carroseul.scrollLeft = 0;
+        btnCarroseulItem[0].style.backgroundColor = "#ffffffd7";
+        btnCarroseulItem[1].style.backgroundColor = "#ffffff63";
+        btnCarroseulItem[2].style.backgroundColor = "#ffffff63";
+        indexCarroseul++;
+    }
+    else if(indexCarroseul == 1){
+        carroseul.scrollLeft = carroseul.offsetWidth;
+        btnCarroseulItem[0].style.backgroundColor = "#ffffff63";
+        btnCarroseulItem[1].style.backgroundColor = "#ffffffd7";
+        btnCarroseulItem[2].style.backgroundColor = "#ffffff63";
+        indexCarroseul++
+    }
+    else{
+        carroseul.scrollLeft = carroseul.offsetWidth * 2
+        btnCarroseulItem[0].style.backgroundColor = "#ffffff63";
+        btnCarroseulItem[1].style.backgroundColor = "#ffffff63";
+        btnCarroseulItem[2].style.backgroundColor = "#ffffffd7";
+        indexCarroseul = 0;
+    }
    
-// },5000)
+},5000)
 
 // função para fazer o navbar ter cor de fundo após a rolangem do scroll
 addEventListener('scroll', ()=>{
