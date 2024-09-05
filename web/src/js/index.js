@@ -52,7 +52,7 @@ function hideBoxMe(){
         isOpenBox = false;
     }
     else{
-        sobreMimBox.style.height = "10.10rem";
+        sobreMimBox.style.height = "14.5rem";
         isOpenBox = true;
         
     }
